@@ -1,0 +1,93 @@
+:root {
+/* Colors */
+    --primary-base: #EDA93D;
+    
+    --light-background-1: #FFFFFF;
+    --light-background-2: #FAFAFA;
+    --light-background-3: #EBEBEB;
+    
+    --light-border-1: #FFFFFF;
+    --light-border-2: #FAFAFA;
+    --light-border-3: #EBEBEB;
+    
+    --dark-background-1: #0A0A0A;
+    --dark-background-2: #1E1E1E;
+    --dark-background-3: #323232;
+
+    --dark-border-1: #0A0A0A;
+    --dark-border-2: #1E1E1E;
+    --dark-border-3: #323232;
+    
+    --light-text-high: #333333;
+    --light-text-medium: #4C4C4C;
+    --light-text-low: #808080;
+
+    --dark-text-high: #FFFFFF;
+    --dark-text-medium: #CCCCCC;
+    --dark-text-low: #959595;
+
+    /* Typoprahy */
+
+    --font-family-base: 'Poppins', sans-serif;
+ 
+}
+
+
+/* Display */
+
+.display {
+    max-width: 1320px;
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: 0.015em;
+    text-align: center;
+}
+
+.paragraph-1 {
+    font-family: var(--font-family-base);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.12em;
+    text-align: left;
+}
+
+.paragraph-2 {
+ 
+    font-family:    var(--font-family-base);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+h2 {
+   
+    font-family: var(--font-family-base);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 120px;
+    letter-spacing: 0.02em;
+
+}
+
+h3 {
+    font-family: var(--font-family-base);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 0em;
+    color: var(--dark-text-high);
+}
+
+h4 {
+    font-family: var(--font-family-base);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+

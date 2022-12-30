@@ -1,0 +1,212 @@
+@media only screen and (max-width: 600px) {
+
+
+.banner {
+    display: flex;
+    padding: 40px;
+    gap: 80px;
+    margin-top: 72px;
+}
+
+.banner h1 {
+    width: 100%;
+}
+
+
+.banner svg {
+    display: flex;
+    align-self: flex-start;
+}
+
+.paragraph-1 {
+    font-family: var(--font-family-base);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.12em;
+    text-align: left;
+}
+
+.display {
+    font-size: 36px;
+    text-align: left;
+}
+
+header {
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    padding: 0 0 0 40px;
+}
+nav svg {
+    margin-right: 0;
+}
+
+
+header nav a {
+    display: none;
+}
+
+
+header button:not(.iconbutton) {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 16px 40px;
+}
+
+
+
+.iconbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    margin-right: 40px;
+}
+
+.about {
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 40px;
+
+}
+
+.project-grid {
+    flex-direction: column;
+    
+}
+
+
+
+
+.overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    background: rgba(10, 10, 10, 0.8);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 220ms;
+}
+
+.overlay.active {
+   visibility: visible;
+   opacity: 1; 
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 16px;
+}
+
+
+
+.drawer-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    gap: 16px; 
+    background-color: var(--dark-background-2);
+    width: 100%;
+    height: 440px;
+    transform: translateY(-440px);
+    transition: transform 220ms;
+}
+
+
+.overlay.active .drawer-menu {
+    transform: translateY(0px);
+}
+
+.drawer-menu .iconbutton {
+    margin-right: 0px;
+    justify-content: flex-end;
+}
+
+.drawer-menu nav {
+    display: flex;
+    flex-direction: column; 
+    gap: 16px;
+    padding:0;
+}
+
+
+.drawer-menu nav a {
+   width: 100%;
+}
+
+
+.services {
+    padding: 80px 40px;
+    height: auto;
+    justify-content: center;
+}
+
+.services .tags {
+    flex-direction: row;
+    width: auto;
+    padding: 0px;
+}
+
+
+
+.work-banner {
+    padding:  40px;
+}
+
+
+.project-grid {
+
+    padding: 40px 40px  40px 40px;
+    gap: 40px;
+}
+
+.footer {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 560px;
+    align-items: center;
+    padding: 40px 40px;
+    margin-top: 80px;
+}
+
+
+.footer span {
+    flex-direction: column;
+    margin-bottom: 120px;
+
+}
+
+.item-footer {
+    width: 100%;
+}
+
+.footer .item-footer button svg {
+    margin: none;
+}
+
+
+
+.item-footer h4, .mail-button {
+   justify-content: center;
+   text-align: center;
+}
+
+
+.socialbuttons {
+    justify-content: center;
+}

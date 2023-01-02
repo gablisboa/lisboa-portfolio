@@ -105,6 +105,11 @@ header button:not(.iconbutton):hover {
 
 }
 
+.banner .display {
+    max-width: 1320px;
+}
+
+
 .banner h1 span {
     color: var(--primary-base);
   
@@ -285,9 +290,14 @@ header button:not(.iconbutton):hover {
     flex-grow: 1;
     border-bottom: 1px solid #323232;
     transition: all ease 220ms;
-
 }
 
+.thumb img {
+    max-width: 480px;
+    border-radius: 8px;
+    border-end-end-radius: 0;
+    border-end-start-radius: 0;
+}
 
 .project-card:hover > .thumb  {
    background-color: var(--primary-base);
@@ -426,9 +436,9 @@ header button:not(.iconbutton):hover {
     height: 44px;
 }
 
-.project-head .display {
+.project-head  .display {
     text-align: left;
-    max-width: 884px;
+    flex: 1;
 }
 
 
@@ -441,8 +451,9 @@ header button:not(.iconbutton):hover {
 
 .project-head div {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 56px;
-    
 }
 
 .content {
@@ -475,4 +486,41 @@ header button:not(.iconbutton):hover {
 
 .content:nth-child(3) {
     background-color: var(--dark-background-1);
+}
+
+.process {
+    color: var(--light-text-high);
+    background-color: var(--light-background-3);
+    padding: 80px 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+.process > div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.process h3 {
+   color: var(--light-text-medium);
+   max-width: 800px;
+}
+
+.process p {
+   color: var(--light-text-low);
+   max-width: 800px;
+}
+
+.process img {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 100%;
+    border-left: 8px solid var(--primary-base);
+    border-right: 8px solid var(--primary-base);
+    border-top: 8px solid var(--primary-base);
 }

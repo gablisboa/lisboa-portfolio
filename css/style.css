@@ -128,27 +128,11 @@ header button:not(.iconbutton):hover {
 }
 
 
-
-@keyframes run {
-    0% {
-      left: 0;
-
-    }
-    50% {
-
-    }
-    100% {
-      left: 0;    
-
-    }
-  }
-
-
-
 .chips-group {
     display: flex;
     gap: 24px;
     align-items: stretch:
+    width: 100%;
 }
 
 
@@ -459,8 +443,8 @@ header button:not(.iconbutton):hover {
 .content {
     display: flex;
     flex-direction: column; 
-    gap: 80px;
     padding: 80px;
+    gap: 80px;
 }
 
 
@@ -471,56 +455,71 @@ header button:not(.iconbutton):hover {
 
 .row {
     display: flex;
+    justify-content: space-between;
+    gap: 80px;
 }
 
-.row h2 {
+
+.row :is(h3,h2) {
     flex:1;
+    max-width: 664px;
 }
 
 .col {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    max-width: 856px;
     flex: 1;
 }
 
-.content:nth-child(3) {
-    background-color: var(--dark-background-1);
-}
-
-.process {
+.content-light {
+    background-color: var(--light-background-2);
     color: var(--light-text-high);
-    background-color: var(--light-background-3);
-    padding: 80px 80px 0 80px;
+}
+
+.content-light p {
+
+    color: var(--light-text-low);
+}
+
+.content-light h3 {
+    max-width: 664px;
+    color: var(--light-text-medium);
+}
+
+.docs {
+    background-color: var(--dark-background-1);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 0;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content:nth-child() h3 {
+    color: var(--dark-text-high);
+}
+
+.docs img {
+    width: 705px;
+
+}
+
+.docs .texts{
+    flex:1;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 24px;
+    max-width: 488px;
 }
 
-
-.process > div {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.docs h3 {
+    color: var(--dark-text-high);
 }
 
-.process h3 {
-   color: var(--light-text-medium);
-   max-width: 800px;
-}
-
-.process p {
-   color: var(--light-text-low);
-   max-width: 800px;
-}
-
-.process img {
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    width: 100%;
-    border-left: 8px solid var(--primary-base);
-    border-right: 8px solid var(--primary-base);
-    border-top: 8px solid var(--primary-base);
+.docs p {
+    color: var(--dark-text-medium);
 }

@@ -7,7 +7,7 @@
 
 body {
     background-color: var(--dark-background-2);
-    font-family: var(--font-family-base);
+    font-family: var(--font-family-base), sans-serif;
     color: var(--dark-text-high);
     list-style: none;
     text-decoration: none;

@@ -129,15 +129,26 @@ header button:not(.iconbutton):hover {
 
 
 .chips-group {
-    display: flex;
-    gap: 24px;
-    align-items: stretch:
     width: 100%;
+    /* align-items: stretch: */
+    /* width: 100%; */
 }
 
+.chips-group .chips-animation {
+    width: auto;
+    display: flex;
+    gap: 24px;
+}
 
+@keyframes infiniteCarousel {
+    0% {
+        transform: translateX(0%);
+    } 100% {
+        transform: translateX(-100%);
+    }
+}
 
-.chip {
+.chips-group .chips-animation .chip {
     border-radius: 500px;
     border: 4px solid var(--primary-base);
     font-family: var(--font-family-base);

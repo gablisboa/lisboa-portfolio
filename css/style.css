@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0   
@@ -11,6 +15,7 @@ body {
     color: var(--dark-text-high);
     list-style: none;
     text-decoration: none;
+
 }
 
 a {
@@ -117,8 +122,14 @@ header button:not(.iconbutton):hover {
 
 @keyframes scroll {
     
-    from {opacity: 1.0;}
-    to  {opacity: 0.0;}
+    from {
+        opacity: 1.0;
+        transform: translateY(0);
+    }
+    to  {
+        opacity: 0.0;
+        transform: translateY(1.2rem);
+    }
   }
 
 .banner svg {
@@ -134,21 +145,12 @@ header button:not(.iconbutton):hover {
     /* width: 100%; */
 }
 
-.chips-group .chips-animation {
-    width: auto;
-    display: flex;
-    gap: 24px;
+.chips-group .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
 }
 
-@keyframes infiniteCarousel {
-    0% {
-        transform: translateX(0%);
-    } 100% {
-        transform: translateX(-100%);
-    }
-}
-
-.chips-group .chips-animation .chip {
+.chips-group .chip {
     border-radius: 500px;
     border: 4px solid var(--primary-base);
     font-family: var(--font-family-base);
@@ -159,6 +161,8 @@ header button:not(.iconbutton):hover {
     text-align: left;
     padding: 24px;
     width: max-content;
+    white-space: nowrap;
+    transition-property: transform;
 }
 
 .tags {
@@ -182,7 +186,7 @@ header button:not(.iconbutton):hover {
 
 .about {
     display: flex;
-    padding: 180px 80px;
+    padding: 160px 80px 0px 80px;
     justify-content: space-between;
     background: linear-gradient(180deg, #1E1E1E 0%, #323232 100%);
 }
@@ -236,13 +240,13 @@ header button:not(.iconbutton):hover {
     background-color: var(--dark-background-3);
     color: var(--dark-text-high);
     text-align: left;
-    padding: 0 80px;
+    padding: 200px 80px 0 80px;
     gap: 32px;
 }
 
 .work-banner > p {
     color: var(--dark-text-low);
-    /* max-width: 420px; */
+
 }
 
 .project-grid {
@@ -508,11 +512,10 @@ header button:not(.iconbutton):hover {
     height: 700px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 160px;
 }
 
-.content:nth-child() h3 {
-    color: var(--dark-text-high);
-}
+
 
 .docs img {
     width: 705px;
@@ -525,6 +528,7 @@ header button:not(.iconbutton):hover {
     flex-direction: column;
     gap: 24px;
     max-width: 488px;
+
 }
 
 .docs h3 {
@@ -534,3 +538,13 @@ header button:not(.iconbutton):hover {
 .docs p {
     color: var(--dark-text-medium);
 }
+
+.flow {
+    width: 100%;
+    display: flex;
+    background-color: var(--light-background-3);
+    padding: 80px 160px;
+    
+
+}
+

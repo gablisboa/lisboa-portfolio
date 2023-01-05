@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/lisboa-portfolio/css/root.css">
     <link rel="stylesheet" href="/lisboa-portfolio/css/style.css">
     <link rel="stylesheet" href="/lisboa-portfolio/css/breakpoints.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     
     <title>Designer de Produto Digital</title>
 </head>
@@ -30,7 +31,7 @@
             <a  href="#about">
                 <li>Sobre</li>
             </a>
-            <a href="index.html">
+            <a href="#work">
                 <li>Trabalho</li>
             </a>
         </nav>
@@ -94,14 +95,16 @@
             <path d="M7.5 0V25M7.5 25L1 18.5M7.5 25L14.5 18" stroke="white"/>
             </svg>
             
-        <ul class="chips-group">
-            <li class="chip">Design System</li>
-            <li class="chip">User Interface</li>
-            <li class="chip">User Experience</li>
-            <li class="chip">Design System</li>
-            <li class="chip">User Interface</li>
-            <li class="chip">User Experience</li>               
-        </ul>
+        <div class="chips-group swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide chip">Design System</div>
+                <div class="swiper-slide chip">User Interface</div>
+                <div class="swiper-slide chip">User Experience</div>
+                <div class="swiper-slide chip">Design System</div>
+                <div class="swiper-slide chip">User Interface</div>
+                <div class="swiper-slide chip">User Experience</div>               
+            </div>
+        </div>
     </section>
    
     <!-- About -->
@@ -158,7 +161,7 @@
     </section>
 
 <!-- Trabalhos -->
-    <section class="work">
+    <section id="work" class="work">
        
         <div class="work-banner">
             <h3>Trabalho</h3>
@@ -281,6 +284,7 @@
 
     </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="/lisboa-portfolio/js/global.js"></script>
 
 </body>

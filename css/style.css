@@ -466,6 +466,7 @@ header button:not(.iconbutton):hover {
 
 .content p {
     color: var(--dark-text-medium);
+    max-width: 856px;
 }
 
 .row {
@@ -513,6 +514,7 @@ header button:not(.iconbutton):hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 160px;
+ 
 }
 
 
@@ -539,12 +541,17 @@ header button:not(.iconbutton):hover {
     color: var(--dark-text-medium);
 }
 
-.flow {
+.asset-flow {
     width: 100%;
     display: flex;
     background-color: var(--light-background-3);
     padding: 80px 160px;
-    
-
 }
 
+.asset-mockup {
+    display: flex;
+    width: 100%;
+    background-color: var(--light-background-3);
+    padding: 320px 160px;
+
+}

@@ -1,5 +1,67 @@
 @media only screen and (max-width: 600px) {
 
+/* Typoprahy */
+
+.display {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0.015em;
+    text-align: left;
+
+    }
+
+h2 {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.005em;
+    text-align: left;
+
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+h4 {
+    font-size: 24px;
+
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.paragraph-1 {
+
+font-size: 18px;
+
+line-height: 40px;
+letter-spacing: 0.12em;
+text-align: left;
+}
+
+.paragraph-2 {
+
+
+    font-size: 16px;
+
+    line-height: 35px;
+    letter-spacing: 0.12em;
+    text-align: left;
+
+
+}
+
+
+
+
 
 .banner {
     display: flex;
@@ -27,10 +89,6 @@
     text-align: left;
 }
 
-.display {
-    font-size: 36px;
-    text-align: left;
-}
 
 header {
     height: 72px;
@@ -210,4 +268,32 @@ header button:not(.iconbutton) {
 .socialbuttons {
     justify-content: center;
 }
+
+
+
+.project-head {
+    padding: 80px 24px; 
+
+
 }
+
+.content {
+    padding: 80px 24px; 
+}
+
+
+.content .row{
+    flex-direction: column; 
+    gap: 80px;
+}
+
+
+.docs {
+    padding: 40px 24px;
+}
+
+.docs img {
+    display: none;
+}
+}
+

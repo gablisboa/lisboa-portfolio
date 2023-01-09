@@ -44,24 +44,6 @@
     text-align: center;
 }
 
-.paragraph-1 {
-    font-family: var(--font-family-base);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 44px;
-    letter-spacing: 0.12em;
-    text-align: left;
-}
-
-.paragraph-2 {
- 
-    font-family:    var(--font-family-base);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-
-}
-
 h2 {
    
     font-family: var(--font-family-base);
@@ -89,5 +71,23 @@ h4 {
     letter-spacing: -0.05em;
     text-align: left;
 }
+.paragraph-1 {
+    font-family: var(--font-family-base);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.12em;
+    text-align: left;
+}
+
+.paragraph-2 {
+ 
+    font-family: var(--font-family-base);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
 
 

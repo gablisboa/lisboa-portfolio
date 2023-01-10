@@ -291,6 +291,7 @@ header button:not(.iconbutton) {
 .docs {
     padding: 40px 24px;
     height: auto;
+    margin-bottom: 0px;
 }
 
 .docs img {
@@ -300,7 +301,7 @@ header button:not(.iconbutton) {
 .docs .texts {
     max-width: 100%;
     height: auto;
-    margin-bottom: 0px;
+   
 }
 }
 

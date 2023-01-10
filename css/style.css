@@ -504,8 +504,13 @@ header button:not(.iconbutton):hover {
     color: var(--light-text-medium);
 }
 
+.docs-base {
+    background-color: var(--light-background-2);
+    width: 100%;
+    padding: 80px;
+}
 .docs {
-    background-color: var(--dark-background-1);
+    background-color: var(--dark-background-2);
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 80px;
@@ -513,8 +518,6 @@ header button:not(.iconbutton):hover {
     height: 700px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 160px;
- 
 }
 
 

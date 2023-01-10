@@ -338,8 +338,12 @@
 
     .project-head {
         padding: 80px 24px; 
+    }
 
-
+    .docs .texts {
+        max-width: 100%;
+        height: auto;
+    
     }
 }
 

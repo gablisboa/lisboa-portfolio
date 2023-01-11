@@ -45,34 +45,73 @@
         letter-spacing: 0.12em;
     }
 
+    iframe {
+        padding: 0;
+        width: 100%;
+    }
+
+    nav {
+        padding: 0 0 0 40px;
+    }
+
+    header button {
+        width: auto;
+        padding: 16px;
+    }
+
+    header button svg {
+        display: none;
+    }
+
     .about {
         flex-direction: column;
         gap: 40px;
-        padding: 80px 40px;
+        padding: 40px;
 
+    }
+
+    .work-banner {
+        padding: 120px 40px 24px 40px;
+    }
+
+    .about .info .socialbuttons {
+        justify-content: flex-start;
     }
 
     .project-grid {
         flex-direction: column;
+        padding: 40px
     }
     .project-grid a {
         width: 100%;
     }
 
-    .footer {
-        flex-direction: column;
-        align-items: flex-start;
-        height: 560px;
-        align-items: center;
-        padding: 40px 40px;
-        margin-top: 80px;
+    .project-head {
+        padding: 40px 24px;
     }
 
+    .work-banner {
+        padding-top: 120px;
+    }
 
-    .footer span {
+    .footer {
         flex-direction: column;
-        margin-bottom: 120px;
+        justify-content: flex-start;
+        padding: 80px;
+        align-items: center;
+    }
 
+    .footer p{
+        text-align: center;
+        order: 3;
+    }
+
+    .footer .socialbuttons {
+        order: 2;
+    }
+
+    .footer .logo {
+        order: 1;
     }
 
     .item-footer {
@@ -93,10 +132,16 @@
         justify-content: center;
     }
 
-
+    .project-card {
+        height: auto;
+    }
 
     .content {
         padding: 80px 24px; 
+    }
+
+    .services {
+        flex-wrap: wrap;
     }
 
 
@@ -124,6 +169,11 @@
         height: auto;
         margin-bottom: 0px;
     }
+
+    .mockup {    
+        background-size: auto 100%;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -211,13 +261,22 @@
     nav {
         padding: 0 0 0 40px;
     }
-    nav svg {
+
+    header button svg {
         margin-right: 0;
+        display: flex;
     }
 
 
     header nav a {
         display: none;
+    }
+
+
+    a  {
+        display: flex;
+        flex-grow: 1;
+        width: 100%;
     }
 
 
@@ -227,6 +286,7 @@
         bottom: 0px;
         padding: 16px 40px;
     }
+
 
 
 
@@ -303,8 +363,9 @@
     }
 
 
-    .drawer-menu nav a {
-    width: 100%;
+    .drawer-menu nav a{
+        width: 100%;
+        display: flex;
     }
 
 
@@ -320,59 +381,65 @@
         padding: 0px;
     }
 
+    .info-project {
+
+        height: auto;
+    }
 
 
     .work-banner {
-        padding:  40px;
+        padding: 120px 40px 24px 40px;
     }
 
 
     .project-grid {
-
         padding: 40px 40px  40px 40px;
         gap: 40px;
     }
 
+    .project-card {
+        height: auto;
+    }
+        
+    .project-head {
+        padding: 80px 24px; 
+    }
+
+    .content {
+        padding: 80px 24px; 
+    }
 
 
+    .content .row{
+        flex-direction: column; 
+        gap: 80px;
+    }
 
-.project-head {
-    padding: 80px 24px; 
+    .docs-base {
+        padding: 24px;
+    }
 
 
+    .docs {
+        padding: 40px 24px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .docs img {
+        width: 100%;
+        margin-top: 80px;
+        display: none;
+    }
+
+    .docs .texts {
+        max-width: 100%;
+        height: auto;
+    
+    }
+    .mockup {
+        height: 550px;
+    }
 }
 
-.content {
-    padding: 80px 24px; 
-}
-
-
-.content .row{
-    flex-direction: column; 
-    gap: 80px;
-}
-
-.docs-base {
-    padding: 24px;
-}
-
-
-.docs {
-    padding: 40px 24px;
-    height: auto;
-    flex-wrap: wrap;
-}
-
-.docs img {
-    width: 100%;
-    margin-top: 80px;
-    display: none;
-}
-
-.docs .texts {
-    max-width: 100%;
-    height: auto;
-   
-}
-}
-
+       

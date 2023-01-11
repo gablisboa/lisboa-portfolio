@@ -45,7 +45,7 @@ nav {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    padding: 0 0 0 80px;
+    padding: 0 0 0 160px;
 }
 nav svg {
     margin-right: 24px;
@@ -141,8 +141,7 @@ header button:not(.iconbutton):hover {
 
 .chips-group {
     width: 100%;
-    /* align-items: stretch: */
-    /* width: 100%; */
+
 }
 
 .chips-group .swiper-wrapper {
@@ -186,8 +185,9 @@ header button:not(.iconbutton):hover {
 
 .about {
     display: flex;
-    padding: 160px 80px 0px 80px;
+    padding: 160px;
     justify-content: space-between;
+    gap: 80px;
     background: linear-gradient(180deg, #1E1E1E 0%, #323232 100%);
 }
 
@@ -203,7 +203,7 @@ header button:not(.iconbutton):hover {
 
 .info { 
     flex-grow: 1; 
-    max-width: 420px;
+    max-width: 620px;
 }
 
 .socialbuttons {
@@ -212,6 +212,8 @@ header button:not(.iconbutton):hover {
     gap: 24px;
     width: 100%;
 }
+
+
 
 .socialbutton {
     display: flex;
@@ -240,12 +242,13 @@ header button:not(.iconbutton):hover {
     background-color: var(--dark-background-3);
     color: var(--dark-text-high);
     text-align: left;
-    padding: 200px 80px 0 80px;
+    padding: 200px 160px 0 160px;
     gap: 32px;
 }
 
 .work-banner > p {
-    color: var(--dark-text-low);
+    color: var(--dark-text-medium);
+    max-width: 620px;
 
 }
 
@@ -253,7 +256,7 @@ header button:not(.iconbutton):hover {
     display: flex;
     align-items: center;
     background-color: var(--dark-background-3);
-    padding: 80px 80px  160px 80px;
+    padding: 160px ;
     gap: 40px;
 }
 
@@ -264,14 +267,13 @@ header button:not(.iconbutton):hover {
 
 .project-card {
     display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: flex-end;
-    height: 780px;
+    flex-wrap: wrap;
     background-color: var(--dark-background-1);
     transition: background-color ease 220ms;
- 
+}
 
+.project-card.disabled {
+    cursor: not-allowed;
 }
 
 .project-card:hover  {
@@ -282,7 +284,6 @@ header button:not(.iconbutton):hover {
 
 .thumb {
     background-color: var(--dark-background-2);
-
     transition: all ease 220ms;
 }
 
@@ -290,7 +291,6 @@ header button:not(.iconbutton):hover {
     width: 100%;
     height: 100%;
 }
-
 
 
 .info-project {
@@ -307,15 +307,19 @@ header button:not(.iconbutton):hover {
 
 .services {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    height: 728px;
     align-items: center;
     gap: 48px;
     margin: 0 auto;
     overflow: hidden;
+    padding: 80px;
 }
 
+.services h3 {
+    width: 100%;
+    text-align: center;
+}
 
 .services > svg {
     position: absolute;
@@ -342,11 +346,12 @@ header button:not(.iconbutton):hover {
 
 .footer {
     display: flex;
-    padding: 80px 80px;
+    padding: 80px;
+    height: 600px;
     gap: 24px;
     background-color: var(--dark-background-1);
     align-items: center;
-
+    align-items: flex-end;
 }
 
 .footer p {
@@ -373,7 +378,7 @@ header button:not(.iconbutton):hover {
     gap: 80px;
     height: auto;
     align-items: flex-start;
-    padding: 80px;
+    padding: 160px;
     position: relative;
 }
 
@@ -413,7 +418,7 @@ header button:not(.iconbutton):hover {
 .content {
     display: flex;
     flex-direction: column; 
-    padding: 80px;
+    padding: 160px;
     gap: 80px;
 }
 
@@ -475,7 +480,11 @@ header button:not(.iconbutton):hover {
     justify-content: space-between;
 }
 
-
+iframe {
+    padding-left: 160px;
+    padding-right: 160px;
+    background-color: var(--light-background-3)
+}
 
 .docs img {
     width: 705px;
@@ -506,7 +515,19 @@ header button:not(.iconbutton):hover {
     padding: 80px 160px;
 }
 
-.asset-mockup {
+
+iframe {
     width: 100%;
-    height: 100%;
+    height: 800px;
+    border: 0;
+}
+
+
+.mockup {
+    background-image: url(/lisboa-portfolio/assets/mockups.png);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }

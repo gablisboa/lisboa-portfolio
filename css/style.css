@@ -233,6 +233,7 @@ header button:not(.iconbutton):hover {
 
 .profile {
     /* height: fit-content; */
+    object-fit: cover;
     border-bottom: 32px solid var(--primary-base);
 }
 

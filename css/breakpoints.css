@@ -232,6 +232,16 @@
         margin-top: 72px;
     }
 
+    .services > .tags > .tag {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .chips-group {
+        width: calc(100% + 80px);
+        margin-left: -40px !important;
+    }
+
     .banner h1 {
         width: 100%;
     }
@@ -273,18 +283,12 @@
     }
 
 
-    a  {
-        display: flex;
-        flex-grow: 1;
-        width: 100%;
-    }
-
-
     header button:not(.iconbutton) {
         position: fixed;
         width: 100%;
         bottom: 0px;
         padding: 16px 40px;
+        left: 0;
     }
 
 

@@ -524,7 +524,7 @@ iframe {
 
 
 .mockup {
-    background-image: url(/lisboa-portfolio/assets/mockups.png);
+    background-image: url(assets/mockups.png);
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;

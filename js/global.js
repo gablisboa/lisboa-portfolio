@@ -14,3 +14,9 @@ const chipCarousel = new Swiper('.chips-group.swiper', {
     slidesPerView: 'auto',
     spaceBetween: 24,
 })
+
+document.querySelectorAll('a[href^="#"]').forEach(element => {
+    element.addEventListener('click', event => {
+        document.querySelector('.overlay').classList.remove('active')
+    })
+})

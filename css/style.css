@@ -234,6 +234,9 @@ header button:not(.iconbutton):hover {
 .profile {
     /* height: fit-content; */
     object-fit: cover;
+    width: 100%;
+    height: auto;
+    float: left;
     border-bottom: 32px solid var(--primary-base);
 }
 

@@ -232,7 +232,7 @@ header button:not(.iconbutton):hover {
 }
 
 .profile {
-    height: fit-content;
+    /* height: fit-content; */
     border-bottom: 32px solid var(--primary-base);
 }
 

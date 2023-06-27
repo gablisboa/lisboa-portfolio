@@ -9,6 +9,7 @@
     --light-border-1: #FFFFFF;
     --light-border-2: #FAFAFA;
     --light-border-3: #EBEBEB;
+
     
     --dark-background-1: #0A0A0A;
     --dark-background-2: #1E1E1E;
@@ -82,12 +83,10 @@ h4 {
 }
 
 .paragraph-2 {
- 
     font-family: var(--font-family-base);
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
-
+    line-height: 150%;
 }
 
 

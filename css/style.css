@@ -1,5 +1,13 @@
 html {
     scroll-behavior: smooth;
+    
+}
+
+::selection {
+
+        color: var(--light-text-high);
+        background: var(--primary-base);
+
 }
 
 * {
@@ -70,6 +78,9 @@ nav a:hover {
     border-bottom: 1px solid var(--primary-base);
 }
 
+
+
+
 header button {
     font-family: var(--font-family-base);
     color: var(--light-text-high);
@@ -97,6 +108,32 @@ header button:not(.iconbutton):hover {
 .iconbutton {
     display: none;
 
+}
+
+
+button {
+    font-family: var(--font-family-base);
+    color: var(--light-text-high);
+    display: flex;
+    justify-content: space-between;
+    height: 96px;
+    align-items: center;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    padding: 16px 24px;
+    transition: background-color ease 220ms;
+    width: 100%;
+}
+
+
+button:not(.iconbutton):hover {
+    background-color: var(--primary-base);
+    color: var(--light-text-high);
+   
 }
 
 .banner {
@@ -175,6 +212,7 @@ header button:not(.iconbutton):hover {
     display: flex;
     gap: 16px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .tag {
@@ -460,6 +498,10 @@ header button:not(.iconbutton):hover {
     position: relative;
 }
 
+.project-head h4 {
+    color: var(--dark-text-low);
+}
+
 .project-head img {
     width: 100%;
     height: 100%;
@@ -468,9 +510,10 @@ header button:not(.iconbutton):hover {
 .project-head .iconbutton {
     display: flex;
     background-color: transparent;
-    justify-content: center;
+    justify-content: start;
     width: 44px;
     height: 44px;
+    width: 100%;
 }
 
 .project-head  .display {
@@ -514,8 +557,8 @@ header button:not(.iconbutton):hover {
 }
 
 
-.row :is(h3,h2) {
-    flex:1;
+.row :is(h1,h3,h2) {
+
     max-width: 664px;
 }
 
@@ -532,12 +575,26 @@ header button:not(.iconbutton):hover {
     color: var(--light-text-high);
 }
 
+
+
+.content-dark {
+    background-color: var(--dark-background-2);
+    color: var(--dark-text-high);
+}
+
+.content-dark h4 {
+    max-width: 664px;
+    color: var(--darkt-text-high);
+}
+
 .content-light p {
 
     color: var(--light-text-low);
 }
 
-.content-light h3 {
+
+
+.content-light h4 {
     max-width: 664px;
     color: var(--light-text-high);
 }
@@ -608,4 +665,137 @@ iframe {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+}
+
+
+.element-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+
+/* Forms */
+ 
+fieldset {
+    border: none;
+    padding: 40px;
+    background-color: var(--dark-background-1);
+}
+
+
+.input-wrapper {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    transition: all 220ms;
+    outline: none;
+    color: var(--dark-text-high);
+    padding: 24px 16px;
+    font-family: var(--font-family-1);
+    box-shadow: 0px 2px 0px 0px var(--dark-border-3);
+}
+
+input::placeholder {
+    font-family: var(--font-family-1);
+}
+
+input::target-text{
+    font-family: var(--font-family-1);
+}
+
+input:hover {
+    background-color: var(--dark-background-3);
+}
+
+
+input:focus {
+    box-shadow: 0px 4px 0px 0px var(--primary-base);
+}
+
+
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 13L16 20L24 13" stroke="%23EDA93D" stroke-width="2"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 16px top 50%;
+    background-color: transparent;
+    border: none;
+    transition: all 220ms;
+    outline: none;
+    color: var(--dark-text-high);
+    padding: 24px 16px;
+    font-family: var(--font-family-1);
+    box-shadow: 0px 2px 0px 0px var(--dark-border-3);
+}
+
+select::placeholder {
+    font-family: var(--font-family-1);
+}
+
+select::target-text{
+    font-family: var(--font-family-1);
+}
+
+select:hover {
+    background-color: var(--dark-background-3);
+}
+
+
+select:focus {
+    box-shadow: 0px 4px 0px 0px var(--primary-base);
+}
+
+
+textarea {
+    resize: none;
+    background-color: transparent;
+    border: none;
+    transition: all 220ms;
+    outline: none;
+    color: var(--dark-text-high);
+    padding: 24px 16px;
+    font-family: var(--font-family-1);
+    box-shadow: 0px 2px 0px 0px var(--dark-border-3);
+}
+
+textarea::placeholder {
+    font-family: var(--font-family-1);
+}
+
+textarea::target-text{
+    font-family: var(--font-family-1);
+}
+
+textarea:hover {
+    background-color: var(--dark-background-3);
+}
+
+
+textarea:focus {
+    box-shadow: 0px 4px 0px 0px var(--primary-base);
+}
+
+
+
+
+.texts {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    margin-bottom: 24px;
+} 
+
+.texts > p {
+    max-width: 464px;
+}
+
+.texts h4 {
+    color: var(--dark-text-high);
 }

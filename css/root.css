@@ -56,18 +56,19 @@ h2 {
 
 h3 {
     font-family: var(--font-family-base);
-    font-size: 32px;
+    font-size: 60px;
+    line-height: 200%;
+    letter-spacing: 1.2px;
     font-weight: 400;
     line-height: 51px;
-    letter-spacing: 0em;
     color: var(--dark-text-high);
 }
 
 h4 {
     font-family: var(--font-family-base);
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 160%;
     letter-spacing: -0.05em;
     text-align: left;
 }
@@ -75,7 +76,7 @@ h4 {
     font-family: var(--font-family-base);
     font-size: 24px;
     font-weight: 400;
-    line-height: 44px;
+    line-height: 182%;
     letter-spacing: 0.12em;
     text-align: left;
 }

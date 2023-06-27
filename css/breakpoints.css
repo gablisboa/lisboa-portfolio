@@ -64,14 +64,32 @@
     }
 
     .about {
-        flex-direction: column;
-        gap: 40px;
-        padding: 40px;
+
+        padding:0;
+        flex-wrap: wrap;
+
 
     }
 
+    .about .info {
+        margin: 0;
+        padding:40px;
+        min-width: none;
+        
+    }
+
+    .profile {
+        margin: 0;
+        margin-left: auto;
+        min-width: 440px;
+    }
+
+
     .work-banner {
         padding: 120px 40px 24px 40px;
+        flex-direction: column;
+        position: sticky;
+        top: 0;
     }
 
     .about .info .socialbuttons {
@@ -88,6 +106,10 @@
 
     .project-head {
         padding: 40px 24px;
+    }
+
+    .info-project-next{
+        min-width: 100%;
     }
 
     .work-banner {
@@ -227,9 +249,11 @@
 
     .banner {
         display: flex;
-        padding: 40px;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
         gap: 80px;
-        margin-top: 72px;
+        margin-top: 80px;
     }
 
     .services > .tags > .tag {
@@ -266,6 +290,7 @@
         height: 72px;
         justify-content: space-between;
         align-items: center;
+   
     }
 
     nav {
@@ -392,16 +417,17 @@
 
 
     .work-banner {
-        padding: 120px 40px 24px 40px;
+        padding: 96px 40px 40px 40px;
     }
 
 
     .project-grid {
-        padding: 40px 40px  40px 40px;
+        padding: 40px 40px 40px 40px;
         gap: 40px;
     }
 
     .project-card {
+        min-width: 100%;
         height: auto;
     }
         

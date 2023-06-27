@@ -88,8 +88,6 @@
     .work-banner {
         padding: 120px 40px 24px 40px;
         flex-direction: column;
-        position: sticky;
-        top: 0;
     }
 
     .about .info .socialbuttons {
